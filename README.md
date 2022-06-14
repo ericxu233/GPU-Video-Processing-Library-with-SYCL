@@ -1,4 +1,4 @@
-# GPU-Video-Processing-Library-with-SYCL
+# GPU-Video-Processing-Library-with-SYCL [WIP]
 
 This project depends on OpenCV in addition to the sycl compiler.  
 
