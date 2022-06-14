@@ -1,7 +1,8 @@
 # GPU-Video-Processing-Library-with-SYCL
 
-Depends on OpenCV.
+This project depends on OpenCV in addition to the sycl compiler.  
 
+## How to build:  
 
-Build:
+mkdir build && cd build  
 cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang ..
