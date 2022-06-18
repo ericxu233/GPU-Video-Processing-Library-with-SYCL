@@ -1,3 +1,4 @@
+#pragma once
 #include <stdio.h>
 #include <iostream>
 #include <opencv2/opencv.hpp>
@@ -5,6 +6,7 @@
 #include <string>
 #include <string.h>
 #include <opencv2/videoio.hpp>
+#include <thread>
 
 using namespace std;
 //namespace sycl = cl::sycl;

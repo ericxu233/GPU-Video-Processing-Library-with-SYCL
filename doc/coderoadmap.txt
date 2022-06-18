@@ -1,0 +1,9 @@
+
+
+
+
+
+
+Optimization List:
+
+- spawn a seperate thread for data reading

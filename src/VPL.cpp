@@ -1,7 +1,7 @@
-#include "Video.hpp"
+#include "VPL.hpp"
 
 
-Video::Video(const string& in_name, string out_name = "out.blah") {
+Video::Video(const string& in_name, sycl::queue& queue_ref, string out_name = "out.blah") : q(queue_ref) {
     cap = cv::VideoCapture(in_name);
     if(!cap.isOpened()) {
         cout << "Error: unable to open the video\n";
@@ -15,19 +15,11 @@ Video::Video(const string& in_name, string out_name = "out.blah") {
 
     cv::Size S = cv::Size(width, height);
 
-    out.open(out_name, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'), FPS, S, true);
+    out.open(out_name, cv::VideoWriter::fourcc('m', 'p', '4', 'v'), FPS, S, true);
 
     if (!out.isOpened()) {
         cout  << "Error: Could not open the output video for write. " << endl;
         exit(1);
-    }
-
-    cv::Mat img;
-
-    while (1) {
-        cap >> img;
-        if (img.empty()) break;
-        out << img;
     }
 }
 
