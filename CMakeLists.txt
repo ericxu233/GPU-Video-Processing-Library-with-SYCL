@@ -12,4 +12,4 @@ include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include/")
 file(GLOB SRCFILES src/*.cpp)
 
 add_executable( vplx main.cpp ${SRCFILES})
-target_link_libraries( vplx ${OpenCV_LIBS} )
+target_link_libraries( vplx ${OpenCV_LIBS})

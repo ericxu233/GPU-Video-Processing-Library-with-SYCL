@@ -3,8 +3,8 @@
 #include <opencv2/opencv.hpp>
 #include <CL/sycl.hpp>
 #include <string>
-#include <opencv2/opencv.hpp>
-#include<string.h>
+#include <string.h>
+#include <opencv2/videoio.hpp>
 
 using namespace std;
 //namespace sycl = cl::sycl;

@@ -1,5 +1,6 @@
 #include "common.hpp"
 #include "VPL.hpp"
+#include "Video.hpp"
 
 #define DISPLAYDEVICE 1
 
@@ -31,8 +32,14 @@ int main(int argc, char** argv )
 
     query_device(device);
 
-    if (strcmp(argv[1], "--grey-out")) {
+    string in_name(argv[2]);
 
+
+    Video myVid(in_name, "out.mp4");
+
+    if (strcmp(argv[1], "--grey-out")) {
+        string cp(argv[2]);
+        
     }
     
     return 0;
